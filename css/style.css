@@ -73,11 +73,14 @@ section{
   background: var(--secondary);
 }
 
+<<<<<<< HEAD
+=======
 .quantity-number {
   font-size: 100px;
   font-weight: bold;
 }
 
+>>>>>>> a2a60dd5f615a2d3facf0606636a22213fd38e01
 /* header */
 
 .header{
@@ -653,7 +656,8 @@ section{
 .order .row form textarea{
   width: 100%;
   resize: none;
-  height: 20rem;  
+  height: 20rem;
+  font-size: 3rem;
 }
 
 /* order */
