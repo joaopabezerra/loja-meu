@@ -648,7 +648,7 @@ section{
 .order .row form textarea{
   width: 100%;
   resize: none;
-  height: 15rem;
+  height: 25rem;
   font-size: 1.2rem;
 }
 
