@@ -648,11 +648,8 @@ section{
 .order .row form textarea{
   width: 100%;
   resize: none;
-  height: 15rem;
+  height: 40rem;
   font-size: 1.2rem;
-  padding-left: 2rem;
-  padding-top: 1rem;
-  line-height: 1.5;
 }
 
 /* order */
