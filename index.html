@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Bakery Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Cabeçalho -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-bread-slice"></i>Joaquim's Bakery </a>
+
+        <nav class="navbar">
+            <a href="#home">Início</a>
+            <a href="#about">Sobre nós</a>
+            <a href="#product">Produtos</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#review">Avaliações</a>
+            <a href="#order">Encomendas</a>
+        </nav>
+
+        <div class="icons">
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+    </header>
+
+    <!-- Fim do Cabeçalho -->
+
+    <!-- Carrinho de compras -->
+
+    <div class="cart-items-container">
+
+        <div id="close-form" class="fas fa-times"></div>
+        <h3 class="title">checkout</h3>
+    
+        <div id="new-cart-items"></div>
+    
+        <a href="#" id="whatsapp-checkout" class="btn"> checkout </a>
+    
+    </div>
+    
+
+    <!-- Fim de Carrinho de compras-->
+
+    <!-- Início -->
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: url(images/slider1.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Nós assamos para um mundo melhor!</h3>
+                        <a href="#product" class="btn"> Aproveite nosssas delicias </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/slider2.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>we bake the world a better place</h3>
+                        <a href="#product" class="btn"> Aproveite nosssas delicias </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <!-- Fim de Secção Inicio -->
+
+    <!-- banner -->
+
+    <section class="banner">
+        <img src="images/banner.png" alt="">
+    </section>
+
+
+    <!-- Fim do banner -->
+
+    <!-- Sobre Nós -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>Sobre</span> nós </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/about.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>good things come to those <span>who bake </span> for others</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis sunt id modi quis in eveniet at! Vero iusto excepturi.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestiae maxime quibusdam rem necessitatibus optio maiores fugiat. Pariatur molestiae.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Fim Sobre Nós-->
+
+    <!-- Produtos -->
+
+    <section class="product" id="product">
+
+        <h1 class="heading">nossos <span> produtos</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>torta de maçã</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">$15.99</span>
+                    <a href="#" class="btn add-to-cart" data-product="apple pie" data-price="15.99">add ao carrinho</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Bolo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">$18.99</span>
+                    <a href="#" class="btn add-to-cart" data-product="Bolo" data-price="18.99">add ao carrinho</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Pão de forma</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="price">$11.99</span>
+                    <a href="#" class="btn add-to-cart" data-product="Pão de forma" data-price="11.99">add ao carrinho</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Biscoito</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">$15.99</span>
+                    <a href="#" class="btn add-to-cart" data-product="Biscoito" data-price="15.99">add ao carrinho</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cerveja</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="price">$27.99</span>
+                    <a href="#" class="btn add-to-cart" data-product="Cerveja" data-price="27.99">add ao carrinho</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Croissant</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">$25.99</span>
+                    <a href="#" class="btn add-to-cart" data-product="Croissant" data-price="25.99">add ao carrinho</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Final de Secção de Produtos-->
+
+
+    <!-- Galeria -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">nossa <span> galeria</span></h1>
+
+        <div class="gallery-container">
+
+            <a href="images/gallery1.jpg" class="box">
+                <img src="images/gallery1.jpg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="images/gallery2.jpg" class="box">
+                <img src="images/gallery2.jpg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="images/gallery3.jpg" class="box">
+                <img src="images/gallery3.jpg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="images/gallery4.jpg" class="box">
+                <img src="images/gallery4.jpg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="images/gallery5.jpg" class="box">
+                <img src="images/gallery5.jpg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="images/gallery6.jpg" class="box">
+                <img src="images/gallery6.jpg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Fim Secção de |Galeria -->
+
+    <!-- Promoção Semanal -->
+
+    <section class="promotion">
+
+        <h1 class="heading">Promoções <span> semanais</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="content">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum earum tempore rerum totam necessitatibus ipsum.</p>
+                </div>
+
+                <img src="images/promotion1.png" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/promotion2.png" alt="">
+                <div class="content">
+                    <h3>Bolo de Nozes</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum earum tempore rerum totam necessitatibus ipsum.</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Fim de Secção da Promoção Semana -->
+
+    
+    <!-- parallax -->
+
+    <section class="parallax">
+
+        <h1 class="heading">linha de <span>  Produtos</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/parallax-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Pães</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea minus laudantium placeat suscipit.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/parallax-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>bolos</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea minus laudantium placeat suscipit.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/parallax-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Biscoitos</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea minus laudantium placeat suscipit.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- parallax -->
+
+    <!-- Avaliações -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> Comentários de <span>  Clientes</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/review-1.png" class="user" alt="">
+                <h3>lacy deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui architecto fuga, voluptatum a deleniti nostrum rerum illum quidem cupiditate odio perspiciatis.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/review-2.png" class="user" alt="">
+                <h3>lacy deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui architecto fuga, voluptatum a deleniti nostrum rerum illum quidem cupiditate odio perspiciatis.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/review-3.png" class="user" alt="">
+                <h3>lacy deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui architecto fuga, voluptatum a deleniti nostrum rerum illum quidem cupiditate odio perspiciatis.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Fim de Secção de Produtos -->
+
+    <!-- Encomendas -->
+
+    <section class="order" id="order">
+
+        <h1 class="heading"><span>faça sua encomenda </span> aqui </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/order.gif" alt="">
+            </div>
+
+            <form action="">
+
+                <div class="inputBox">
+                    <input type="text" placeholder="first name">
+                    <input type="text" placeholder="last name">
+                </div>
+
+                <div class="inputBox">
+                    <input type="email" placeholder="email address">
+                    <input type="number" placeholder="phone number">
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="food name">
+                    <input type="number" placeholder="how much">
+                </div>
+
+                <textarea placeholder="your address" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="order now" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Fim de Secção de Encomendas -->
+
+    <!-- Rodapé -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Endereço</h3>
+                <p>QNP 5 Conjunto P Lote 49 Loja 1 - P Norte Ceilandia</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/joaquims_bakery" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>E-mail</h3>
+                <a href="#" class="link">teste@gmail.com</a>
+                <a href="#" class="link">teste@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Telefone</h3>
+                <p> (61) 99309 9538</p>
+                <p> (61) 99309 9538</p>
+            </div>
+
+            <div class="box">
+                <h3> Aberto</h3>
+                <p>Segunda - Sexta: 8:00 - 18:00 <br> Domingo: 7:00 - 13:00 Café Colonial</p>
+            </div>
+
+        </div>
+
+        <div class="credit">  <span> </span> </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Fim de Secção de Rodapé -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        lightGallery(document.querySelector('.gallery .gallery-container'));
+    </script>
+
+
+</body>
+</html>
