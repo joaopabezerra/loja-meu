@@ -653,8 +653,7 @@ section{
 .order .row form textarea{
   width: 100%;
   resize: none;
-  height: 20rem;
-  font-size: 3rem;
+  height: 20rem;  
 }
 
 /* order */
