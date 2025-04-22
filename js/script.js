@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let quantity = item.querySelector('.quantity span').innerText;
             message += `${product} - ${price} x ${quantity}\n`;
         });
-        let whatsappUrl = `https://wa.me/+5561993099538?text=${encodeURIComponent(message)}`;
+        let whatsappUrl = `https://wa.me/+5561993999110?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     });
 
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let message = `Pedido de ${nome} ${sobrenome}:\nEmail: ${email}\nTelefone: ${telefone}\nEndereço: ${endereco}\nReferência: ${referencia}\nDetalhes do pedido:\n${detalhes}`;
         
-        let whatsappUrl = `https://wa.me/+5561993099538?text=${encodeURIComponent(message)}`;
+        let whatsappUrl = `https://wa.me/+5561993999110?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     });
 });
